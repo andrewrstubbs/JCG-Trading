@@ -10,7 +10,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
-
+/**
+ *Finds the first mention of an NYSE-listed company within some input text.
+ *First searches for an NYSE stock ticker, then attempts to find some variation of a matching company
+ *name as listed on the NYSE through regular expression 
+ * 
+ */
 public class Preprocessor {
 	private Connection conn;
 	private static ArrayList<String[]> companylist = null;
